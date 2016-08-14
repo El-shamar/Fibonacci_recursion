@@ -2,6 +2,7 @@ package com.tecgle.noble.fibonacci;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FibonacciTest {
@@ -29,6 +30,11 @@ public class FibonacciTest {
 	@Test
 	public void fibonacciof_9is_34(){
 		assertEquals(34, Fibonacci.getFibonacci(9));
+	}
+	
+	@Ignore @Test
+	public void IgnoreMe(){
+		assertEquals(134, Fibonacci.getFibonacci(9));
 	}
 
 }
